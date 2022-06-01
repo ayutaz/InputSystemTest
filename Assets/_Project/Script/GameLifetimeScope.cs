@@ -11,10 +11,12 @@ namespace _Project
         [SerializeField] private MenuView menuView;
         [SerializeField] private PlayerMessage playerMessage;
         [SerializeField] private PlayerMove playerMove;
+        [SerializeField] private SelectObject selectObject;
         [SerializeField] private InputSystemUIInputModule inputModule;
 
         protected override void Configure(IContainerBuilder builder)
         {
+            builder.RegisterComponent(selectObject);
             builder.RegisterComponent(playerMessage);
             builder.RegisterComponent(inputModule);
             builder.RegisterComponent(menuView);

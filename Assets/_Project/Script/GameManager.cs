@@ -13,13 +13,15 @@ namespace _Project
         private readonly PlayerMove _playerMove;
         private readonly GameInput _gameInput;
         private readonly PlayerMessage _playerMessage;
+        private readonly SelectObject _selectObject;
         private readonly CompositeDisposable _disposables = new CompositeDisposable();
         private bool _isOpenMenu = false;
 
-        private GameManager(GameView gameView, GameInput gameInput, PlayerMove playerMove, MenuView menuView, PlayerMessage playerMessage)
+        private GameManager(GameView gameView, GameInput gameInput, PlayerMove playerMove, MenuView menuView, PlayerMessage playerMessage, SelectObject selectObject)
         {
             _menuView = menuView;
             _gameView = gameView;
+            _selectObject = selectObject;
             _gameInput = gameInput;
             _playerMove = playerMove;
             _playerMessage = playerMessage;
@@ -47,6 +49,8 @@ namespace _Project
                 Application.Quit();
 #endif
             }).AddTo(_disposables);
+
+            _selectObject.OnClickAsObservable().Subscribe(objectName => { _playerMessage.SetMessage(objectName); }).AddTo(_disposables);
         }
 
 
