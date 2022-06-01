@@ -34,7 +34,7 @@ namespace _Project
 
         public void Start()
         {
-            _gameView.OnClickTestButton().Subscribe(_ => { Debug.Log($"{_gameView.InputMessage()}"); }).AddTo(_disposables);
+            _gameView.OnClickTestButton().Subscribe(message => { Debug.Log($"{message}"); }).AddTo(_disposables);
 
             _menuView.OnRestartButtonClickAsObservable().Subscribe(_ =>
             {

@@ -8,14 +8,21 @@ namespace _Project
 {
     public class GameView : MonoBehaviour
     {
-        [SerializeField] private Button testButton;
+        [SerializeField] private Button sendButton;
         [SerializeField] private TMP_InputField inputField;
+        private readonly Subject<string> _onClickSendSubject = new Subject<string>();
+        public IObservable<string> OnClickTestButton() => _onClickSendSubject;
 
-        public string InputMessage()
+        private void Awake()
         {
-            return inputField.text;
+            sendButton.OnClickAsObservable()
+                .Where(_ => !string.IsNullOrEmpty(inputField.text))
+                .Subscribe(_ =>
+                {
+                    _onClickSendSubject.OnNext(inputField.text);
+                    inputField.text = string.Empty;
+                })
+                .AddTo(this);
         }
-
-        public IObservable<Unit> OnClickTestButton() => testButton.OnClickAsObservable();
     }
 }

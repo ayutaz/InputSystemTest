@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1b145a0e7c24159956be69065b74daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testButton: {fileID: 1107919738}
+  sendButton: {fileID: 1107919738}
   inputField: {fileID: 429866301}
 --- !u!1 &429866299
 GameObject:
