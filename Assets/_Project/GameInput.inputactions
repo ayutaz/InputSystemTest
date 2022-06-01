@@ -106,7 +106,7 @@
                 {
                     "name": "",
                     "id": "75c68279-b1f7-4523-813d-093e6a96f6ba",
-                    "path": "*/{Back}",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse;Gamepad;Joystick;XR",
