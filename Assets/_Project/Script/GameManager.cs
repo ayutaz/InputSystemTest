@@ -37,7 +37,7 @@ namespace _Project
                 //todo リスタート処理
             }).AddTo(_disposables);
 
-            _menuView.OnRestartButtonClickAsObservable().Subscribe(_ =>
+            _menuView.OnGameEndButtonClickAsObservable().Subscribe(_ =>
             {
 #if UNITY_EDITOR
                 EditorApplication.isPlaying = false;
@@ -61,8 +61,9 @@ namespace _Project
                 _playerMove.Move(moveValue);
             }
 
-            if (_gameInput.Player.Menu.triggered)
+            if (_gameInput.Player.Menu.WasPressedThisFrame())
             {
+                Debug.Log("Menu");
                 _isOpenMenu = !_isOpenMenu;
                 _menuView.SetView(_isOpenMenu);
             }
