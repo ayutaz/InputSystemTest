@@ -10,6 +10,8 @@ Unity Inputを使っていろいろやってみるプロジェクト
 
 # [DemoPage](https://ayutaz.github.io/InputSystemTest/WebGL/WebGL/)
 
+![](Docs/InputSystemDemo.gif)
+
 # usage
 1. Open Unity 2021.3.3f1 and select Project
 2. import [Asset FTTGR](https://assetstore.unity.com/packages/2d/environments/asset-fttgr-222174)
@@ -21,4 +23,4 @@ Unity Inputを使っていろいろやってみるプロジェクト
 - [x] 特定のオブジェクトの移動
 - [x] キーボード入力
 - [x] UIボタンの入力
-- [ ] 特定オブジェクトのマウスクリック判定
+- [x] 特定オブジェクトのマウスクリック判定
