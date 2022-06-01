@@ -9,11 +9,13 @@ namespace _Project
     {
         [SerializeField] private GameView gameView;
         [SerializeField] private MenuView menuView;
+        [SerializeField] private PlayerMessage playerMessage;
         [SerializeField] private PlayerMove playerMove;
         [SerializeField] private InputSystemUIInputModule inputModule;
 
         protected override void Configure(IContainerBuilder builder)
         {
+            builder.RegisterComponent(playerMessage);
             builder.RegisterComponent(inputModule);
             builder.RegisterComponent(menuView);
             builder.RegisterComponent(gameView);

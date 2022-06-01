@@ -12,15 +12,17 @@ namespace _Project
         private readonly MenuView _menuView;
         private readonly PlayerMove _playerMove;
         private readonly GameInput _gameInput;
+        private readonly PlayerMessage _playerMessage;
         private readonly CompositeDisposable _disposables = new CompositeDisposable();
         private bool _isOpenMenu = false;
 
-        private GameManager(GameView gameView, GameInput gameInput, PlayerMove playerMove, MenuView menuView)
+        private GameManager(GameView gameView, GameInput gameInput, PlayerMove playerMove, MenuView menuView, PlayerMessage playerMessage)
         {
             _menuView = menuView;
             _gameView = gameView;
             _gameInput = gameInput;
             _playerMove = playerMove;
+            _playerMessage = playerMessage;
         }
 
         public void Initialize()
@@ -30,7 +32,7 @@ namespace _Project
 
         public void Start()
         {
-            _gameView.OnClickTestButton().Subscribe(message => { Debug.Log($"{message}"); }).AddTo(_disposables);
+            _gameView.OnClickTestButton().Subscribe(message => { _playerMessage.SetMessage(message); }).AddTo(_disposables);
 
             _menuView.OnRestartButtonClickAsObservable().Subscribe(_ =>
             {
