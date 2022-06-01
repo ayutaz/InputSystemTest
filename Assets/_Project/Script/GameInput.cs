@@ -158,17 +158,6 @@ namespace _Project
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""down"",
-                    ""id"": ""44a64ad8-a9a7-4124-b99c-62a12cb3fcd5"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Move"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": ""left"",
                     ""id"": ""784ea668-d8f4-4a5d-901a-4333622c443f"",
                     ""path"": ""<Keyboard>/a"",
