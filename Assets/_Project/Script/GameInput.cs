@@ -39,48 +39,12 @@ namespace _Project
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""LookEngage"",
-                    ""type"": ""Button"",
-                    ""id"": ""4498a712-d7a0-4bdb-af9a-9ce103d7f80c"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""MultiTap"",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Menu"",
-                    ""type"": ""Button"",
-                    ""id"": ""557a7c12-7325-4b35-a80d-9c883f92c193"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""ResetCamera"",
-                    ""type"": ""Button"",
-                    ""id"": ""90ab5146-517c-4e3b-9408-2c3e9744da7f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Fire"",
                     ""type"": ""Button"",
                     ""id"": ""8860b0e7-988c-4156-b561-037532d539d8"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Tap"",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""UIEngage"",
-                    ""type"": ""Button"",
-                    ""id"": ""a622e93a-cbc4-4d9d-828b-d786aff4823f"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press(behavior=2)"",
                     ""initialStateCheck"": false
                 },
                 {
@@ -129,72 +93,6 @@ namespace _Project
                 },
                 {
                     ""name"": """",
-                    ""id"": ""75c68279-b1f7-4523-813d-093e6a96f6ba"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Gamepad;Joystick;XR"",
-                    ""action"": ""Menu"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5cb3f822-1c26-436d-8297-2a3bdcddb18d"",
-                    ""path"": ""*/{PrimaryAction}"",
-                    ""interactions"": ""MultiTap"",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;Gamepad;Joystick;XR"",
-                    ""action"": ""ResetCamera"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c2b09d11-10d6-4b18-8cee-e30677a1d0c5"",
-                    ""path"": ""<Touchscreen>/press"",
-                    ""interactions"": ""MultiTap(tapTime=0.5)"",
-                    ""processors"": """",
-                    ""groups"": ""Touch"",
-                    ""action"": ""ResetCamera"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""eae73e23-5f62-489a-9579-c3ca968dafae"",
-                    ""path"": ""*/{PrimaryAction}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse;XR"",
-                    ""action"": ""LookEngage"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3f9a1304-093e-44ec-b1e4-ac4b981d15b7"",
-                    ""path"": ""<Keyboard>/leftCtrl"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""LookEngage"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3022e7b9-dcb0-4b60-b350-1596d6a2a8bf"",
-                    ""path"": ""<Touchscreen>/press"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Touch"",
-                    ""action"": ""LookEngage"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""13f1876a-c835-4f49-be97-f4e3028c5d1a"",
                     ""path"": ""*/{SecondaryAction}"",
                     ""interactions"": """",
@@ -234,17 +132,6 @@ namespace _Project
                     ""processors"": """",
                     ""groups"": ""Joystick"",
                     ""action"": ""Fire"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a4ae0e14-22a1-41e6-a3d3-2dde93b54665"",
-                    ""path"": ""<Gamepad>/leftTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""UIEngage"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -395,6 +282,15 @@ namespace _Project
                     ""type"": ""PassThrough"",
                     ""id"": ""7105c62b-8996-4ef9-84de-e367c1de43c6"",
                     ""expectedControlType"": ""Quaternion"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""3161ff59-e939-4547-ae09-a83e1cb36d58"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -818,6 +714,17 @@ namespace _Project
                     ""action"": ""TrackedDeviceOrientation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""77adbba4-706b-449d-bb21-ceb3842beea5"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -827,11 +734,7 @@ namespace _Project
             // Player
             m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
             m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
-            m_Player_LookEngage = m_Player.FindAction("LookEngage", throwIfNotFound: true);
-            m_Player_Menu = m_Player.FindAction("Menu", throwIfNotFound: true);
-            m_Player_ResetCamera = m_Player.FindAction("ResetCamera", throwIfNotFound: true);
             m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
-            m_Player_UIEngage = m_Player.FindAction("UIEngage", throwIfNotFound: true);
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
@@ -845,6 +748,7 @@ namespace _Project
             m_UI_RightClick = m_UI.FindAction("RightClick", throwIfNotFound: true);
             m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
             m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
+            m_UI_Menu = m_UI.FindAction("Menu", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -905,22 +809,14 @@ namespace _Project
         private readonly InputActionMap m_Player;
         private IPlayerActions m_PlayerActionsCallbackInterface;
         private readonly InputAction m_Player_Look;
-        private readonly InputAction m_Player_LookEngage;
-        private readonly InputAction m_Player_Menu;
-        private readonly InputAction m_Player_ResetCamera;
         private readonly InputAction m_Player_Fire;
-        private readonly InputAction m_Player_UIEngage;
         private readonly InputAction m_Player_Move;
         public struct PlayerActions
         {
             private @GameInput m_Wrapper;
             public PlayerActions(@GameInput wrapper) { m_Wrapper = wrapper; }
             public InputAction @Look => m_Wrapper.m_Player_Look;
-            public InputAction @LookEngage => m_Wrapper.m_Player_LookEngage;
-            public InputAction @Menu => m_Wrapper.m_Player_Menu;
-            public InputAction @ResetCamera => m_Wrapper.m_Player_ResetCamera;
             public InputAction @Fire => m_Wrapper.m_Player_Fire;
-            public InputAction @UIEngage => m_Wrapper.m_Player_UIEngage;
             public InputAction @Move => m_Wrapper.m_Player_Move;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
@@ -934,21 +830,9 @@ namespace _Project
                     @Look.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                     @Look.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
                     @Look.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                    @LookEngage.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookEngage;
-                    @LookEngage.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookEngage;
-                    @LookEngage.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLookEngage;
-                    @Menu.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
-                    @Menu.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
-                    @Menu.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMenu;
-                    @ResetCamera.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResetCamera;
-                    @ResetCamera.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResetCamera;
-                    @ResetCamera.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnResetCamera;
                     @Fire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
                     @Fire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
                     @Fire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                    @UIEngage.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUIEngage;
-                    @UIEngage.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUIEngage;
-                    @UIEngage.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnUIEngage;
                     @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                     @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                     @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
@@ -959,21 +843,9 @@ namespace _Project
                     @Look.started += instance.OnLook;
                     @Look.performed += instance.OnLook;
                     @Look.canceled += instance.OnLook;
-                    @LookEngage.started += instance.OnLookEngage;
-                    @LookEngage.performed += instance.OnLookEngage;
-                    @LookEngage.canceled += instance.OnLookEngage;
-                    @Menu.started += instance.OnMenu;
-                    @Menu.performed += instance.OnMenu;
-                    @Menu.canceled += instance.OnMenu;
-                    @ResetCamera.started += instance.OnResetCamera;
-                    @ResetCamera.performed += instance.OnResetCamera;
-                    @ResetCamera.canceled += instance.OnResetCamera;
                     @Fire.started += instance.OnFire;
                     @Fire.performed += instance.OnFire;
                     @Fire.canceled += instance.OnFire;
-                    @UIEngage.started += instance.OnUIEngage;
-                    @UIEngage.performed += instance.OnUIEngage;
-                    @UIEngage.canceled += instance.OnUIEngage;
                     @Move.started += instance.OnMove;
                     @Move.performed += instance.OnMove;
                     @Move.canceled += instance.OnMove;
@@ -995,6 +867,7 @@ namespace _Project
         private readonly InputAction m_UI_RightClick;
         private readonly InputAction m_UI_TrackedDevicePosition;
         private readonly InputAction m_UI_TrackedDeviceOrientation;
+        private readonly InputAction m_UI_Menu;
         public struct UIActions
         {
             private @GameInput m_Wrapper;
@@ -1009,6 +882,7 @@ namespace _Project
             public InputAction @RightClick => m_Wrapper.m_UI_RightClick;
             public InputAction @TrackedDevicePosition => m_Wrapper.m_UI_TrackedDevicePosition;
             public InputAction @TrackedDeviceOrientation => m_Wrapper.m_UI_TrackedDeviceOrientation;
+            public InputAction @Menu => m_Wrapper.m_UI_Menu;
             public InputActionMap Get() { return m_Wrapper.m_UI; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -1048,6 +922,9 @@ namespace _Project
                     @TrackedDeviceOrientation.started -= m_Wrapper.m_UIActionsCallbackInterface.OnTrackedDeviceOrientation;
                     @TrackedDeviceOrientation.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnTrackedDeviceOrientation;
                     @TrackedDeviceOrientation.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnTrackedDeviceOrientation;
+                    @Menu.started -= m_Wrapper.m_UIActionsCallbackInterface.OnMenu;
+                    @Menu.performed -= m_Wrapper.m_UIActionsCallbackInterface.OnMenu;
+                    @Menu.canceled -= m_Wrapper.m_UIActionsCallbackInterface.OnMenu;
                 }
                 m_Wrapper.m_UIActionsCallbackInterface = instance;
                 if (instance != null)
@@ -1082,6 +959,9 @@ namespace _Project
                     @TrackedDeviceOrientation.started += instance.OnTrackedDeviceOrientation;
                     @TrackedDeviceOrientation.performed += instance.OnTrackedDeviceOrientation;
                     @TrackedDeviceOrientation.canceled += instance.OnTrackedDeviceOrientation;
+                    @Menu.started += instance.OnMenu;
+                    @Menu.performed += instance.OnMenu;
+                    @Menu.canceled += instance.OnMenu;
                 }
             }
         }
@@ -1089,11 +969,7 @@ namespace _Project
         public interface IPlayerActions
         {
             void OnLook(InputAction.CallbackContext context);
-            void OnLookEngage(InputAction.CallbackContext context);
-            void OnMenu(InputAction.CallbackContext context);
-            void OnResetCamera(InputAction.CallbackContext context);
             void OnFire(InputAction.CallbackContext context);
-            void OnUIEngage(InputAction.CallbackContext context);
             void OnMove(InputAction.CallbackContext context);
         }
         public interface IUIActions
@@ -1108,6 +984,7 @@ namespace _Project
             void OnRightClick(InputAction.CallbackContext context);
             void OnTrackedDevicePosition(InputAction.CallbackContext context);
             void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
+            void OnMenu(InputAction.CallbackContext context);
         }
     }
 }

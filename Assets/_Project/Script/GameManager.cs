@@ -61,9 +61,8 @@ namespace _Project
                 _playerMove.Move(moveValue);
             }
 
-            if (_gameInput.Player.Menu.WasPressedThisFrame())
+            if (_gameInput.UI.Menu.WasPressedThisFrame())
             {
-                Debug.Log("Menu");
                 _isOpenMenu = !_isOpenMenu;
                 _menuView.SetView(_isOpenMenu);
             }
