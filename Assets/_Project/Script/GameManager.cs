@@ -2,8 +2,6 @@
 using UniRx;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.InputSystem.UI;
-using UnityEngine.SceneManagement;
 using VContainer.Unity;
 
 namespace _Project
@@ -14,13 +12,11 @@ namespace _Project
         private readonly MenuView _menuView;
         private readonly PlayerMove _playerMove;
         private readonly GameInput _gameInput;
-        private readonly InputSystemUIInputModule _inputModule;
         private readonly CompositeDisposable _disposables = new CompositeDisposable();
         private bool _isOpenMenu = false;
 
-        private GameManager(GameView gameView, GameInput gameInput, PlayerMove playerMove, MenuView menuView, InputSystemUIInputModule inputModule)
+        private GameManager(GameView gameView, GameInput gameInput, PlayerMove playerMove, MenuView menuView)
         {
-            _inputModule = inputModule;
             _menuView = menuView;
             _gameView = gameView;
             _gameInput = gameInput;
@@ -59,12 +55,15 @@ namespace _Project
 
         public void Tick()
         {
-            var moveValue = _gameInput.Player.Move.ReadValue<Vector2>();
-            _playerMove.Move(moveValue);
+            if (!_gameView.IsInput)
+            {
+                var moveValue = _gameInput.Player.Move.ReadValue<Vector2>();
+                _playerMove.Move(moveValue);
+            }
 
             if (_gameInput.Player.Menu.triggered)
             {
-                _isOpenMenu = true;
+                _isOpenMenu = !_isOpenMenu;
                 _menuView.SetView(_isOpenMenu);
             }
 
@@ -76,12 +75,10 @@ namespace _Project
             if (isMenuMode)
             {
                 _gameInput.Player.Disable();
-                // _inputModule.enabled = false;
             }
             else
             {
                 _gameInput.Player.Enable();
-                // _inputModule.enabled = true;
             }
         }
     }

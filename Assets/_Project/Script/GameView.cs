@@ -12,6 +12,7 @@ namespace _Project
         [SerializeField] private TMP_InputField inputField;
         private readonly Subject<string> _onClickSendSubject = new Subject<string>();
         public IObservable<string> OnClickTestButton() => _onClickSendSubject;
+        public bool IsInput => inputField.isFocused;
 
         private void Awake()
         {
