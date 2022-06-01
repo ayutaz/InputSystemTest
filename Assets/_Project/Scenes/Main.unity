@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1043297165687082670, guid: fad55f2363832264a85057f73e04d951, type: 3}
       propertyPath: m_Name
-      value: FireType2
+      value: Fire
       objectReference: {fileID: 0}
     - target: {fileID: 1235742926680452520, guid: fad55f2363832264a85057f73e04d951, type: 3}
       propertyPath: m_RootOrder
@@ -1219,7 +1219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4270832553172412253, guid: f1d9c88f8b606ff45bed382351f4f004, type: 3}
       propertyPath: m_Name
-      value: FireType1
+      value: Fire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d9c88f8b606ff45bed382351f4f004, type: 3}
@@ -1937,7 +1937,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5450929509849046161, guid: 79b6ee7b07b5b484ea7a317d28d45ede, type: 3}
       propertyPath: m_Name
-      value: Berrie2
+      value: Flower
       objectReference: {fileID: 0}
     - target: {fileID: 5450929509849046174, guid: 79b6ee7b07b5b484ea7a317d28d45ede, type: 3}
       propertyPath: m_RootOrder
@@ -2549,7 +2549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4270832553172412253, guid: f1d9c88f8b606ff45bed382351f4f004, type: 3}
       propertyPath: m_Name
-      value: FireType1_1
+      value: Fire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d9c88f8b606ff45bed382351f4f004, type: 3}
@@ -2562,7 +2562,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5450929509849046161, guid: 79b6ee7b07b5b484ea7a317d28d45ede, type: 3}
       propertyPath: m_Name
-      value: Berrie2_1
+      value: Flower
       objectReference: {fileID: 0}
     - target: {fileID: 5450929509849046174, guid: 79b6ee7b07b5b484ea7a317d28d45ede, type: 3}
       propertyPath: m_RootOrder
