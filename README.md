@@ -6,13 +6,15 @@ Unity Inputを使っていろいろやってみるプロジェクト
 
 * Unity 2021.3.3f1
 * [Asset FTTGR](https://assetstore.unity.com/packages/2d/environments/asset-fttgr-222174)
+* [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676)
 
 # [DemoPage](https://ayutaz.github.io/InputSystemTest/WebGL/WebGL/)
 
 # usage
 1. Open Unity 2021.3.3f1 and select Project
 2. import [Asset FTTGR](https://assetstore.unity.com/packages/2d/environments/asset-fttgr-222174)
-3. open Main Scene
+3. import [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676)
+4. open Main Scene
 
 # 試したこと
 
