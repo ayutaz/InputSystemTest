@@ -8,7 +8,7 @@ Unity Inputを使っていろいろやってみるプロジェクト
 * [Asset FTTGR](https://assetstore.unity.com/packages/2d/environments/asset-fttgr-222174)
 * [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676)
 
-# [DemoPage](https://ayutaz.github.io/InputSystemTest/WebGL/WebGL/)
+# [DemoPage](https://ayutaz.github.io/InputSystemTest)
 
 ![](Docs/InputSystemDemo.gif)
 
