@@ -13,6 +13,7 @@ Unity Inputを使っていろいろやってみるプロジェクト
 ![](Docs/InputSystemDemo.gif)
 
 # usage
+
 1. Open Unity 2021.3.3f1 and select Project
 2. import [Asset FTTGR](https://assetstore.unity.com/packages/2d/environments/asset-fttgr-222174)
 3. import [DOTween](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676)
@@ -24,6 +25,7 @@ Unity Inputを使っていろいろやってみるプロジェクト
 - [x] キーボード入力
 - [x] UIボタンの入力
 - [x] 特定オブジェクトのマウスクリック判定
+- [x] ビルド後 ビルドデータを特定のブランチにpush(WebGL Deploy)
 
 # Deploy.bat detail
 
