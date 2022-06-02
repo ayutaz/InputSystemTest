@@ -24,3 +24,11 @@ Unity Inputを使っていろいろやってみるプロジェクト
 - [x] キーボード入力
 - [x] UIボタンの入力
 - [x] 特定オブジェクトのマウスクリック判定
+
+# Deploy.bat detail
+
+```bat
+git add *
+git commit -m "Deploy"
+git push origin webgl_build
+```
